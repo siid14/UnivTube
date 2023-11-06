@@ -4,7 +4,7 @@ const form = document.querySelector('form');
 const usernameInput = form.querySelector('#username');
 let usernameValue = usernameInput.value; // * "let" to ensure that any user input update is assigned
 const usernameRegex = /^[a-zA-Z]/;
-
+// yes
 function validateUsername(event) {
   console.log('Username value:', usernameValue);
   
