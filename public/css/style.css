@@ -1,0 +1,365 @@
+/* CSS reset */
+/* This resets all default styles applied by browsers to different HTML elements */
+/* You can use either a reset or a normalize stylesheet, depending on your preferences */
+/* For this example, we'll use the popular normalize.css library */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* General styles for all html pages */
+/* Here, we'll define some general styles that apply to the entire page */
+html, body {
+  margin-top: 0px;
+  padding: 0;
+  overflow: auto;
+  background-color: #D3D3D3;
+  height: 100%;
+}
+
+/* to make sure that padding and border are included in the width of the elements: */
+* {
+  box-sizing: border-box; 
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-nav li {
+  margin-right: 150px;
+}
+
+.main-nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  margin-right: 1px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  height: 100vh;
+}
+
+.header-common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C29B0C;
+  margin:0;
+  height: 100px;
+}
+
+.title-common {
+  font-size: 50px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul.no-dot {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.input-common {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.label-common {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+/* End General styles */
+
+
+/* index.html styles */
+
+
+#data-photos-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #CB4C4E;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* End index.html styles */
+
+
+/* login.html styles */
+.login-form-container{
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 100px 650px 100px 650px;
+  padding: 0px;
+  /* outline: solid red; */
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+  /* transform: perspective(400px) rotateX(10deg) rotateY(-5deg); */
+  background-color: #e2e2e2
+
+}
+
+.login-form-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-form-container label {
+  margin-bottom: 10px;
+}
+
+.login-form-container input {
+  margin-bottom: 10px;
+}
+
+.h3-form{
+  font-size: 100px;
+}
+
+.login-form-container input[type="submit"] {
+  margin-top: 10px;
+}
+/* End login.html styles */
+
+/* registration.html styles */
+.registration-form-container {
+  display: flex;
+  height: 700px;
+ 
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 100px 650px 100px 650px;
+  padding: 0px;
+  /* outline: solid red; */
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+  /* transform: perspective(400px) rotateX(10deg) rotateY(-5deg); */
+  background-color: #e2e2e2
+}
+
+.registration-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.registration-form-container label{
+ font-size: 15px;
+ margin-top: 5px;;
+}
+
+.registration-form-container input{
+ margin-top: 5px;
+}
+
+.registration-form-container input[type="checkbox"]{
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+
+.registration-checkbox-container{
+  display: flex;
+  align-items: center;
+}
+
+.registration-rules-container{
+  display: flex;
+  align-items: center;
+}
+
+/* End registration.html styles */
+
+/* postvideo.html styles */
+.postv-textarea-vdescription{
+  border: 1px solid #ccc;
+  width: 430px;
+  height: 500px;
+}
+
+.postv-input-vtitle{
+  width: 400px;
+  border: 1px solid #ccc;
+}
+
+.postv-input-filename{
+  width: 210px;
+}
+
+.postv-form-container{
+  display: flex;
+  height: 800px;
+  margin: 30px 650px 100px 650px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+  background-color: #e2e2e2;
+  position: relative;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* To add line black line on the right and left side */ 
+
+/* .postv-form-container:before,
+.postv-form-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: black;
+} */
+
+/* .postv-form-container:before {
+  left: -3px;
+}
+
+.postv-form-container:after {
+  right: -3px;
+} */
+
+
+/* .postv-filename-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+} */
+
+.postv-submit-button-container{
+  margin-top: 20px;
+  display: block;
+}
+
+/* End postvideo.html styles */
+
+/* viewpost.html styles */
+.viewp-videosection-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 650px 100px 650px;
+  padding: 10px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+  background-color: #e2e2e2;
+}
+
+.viewp-common-videoinfo{
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.viewp-video{
+  margin-top: 30px;
+  width: 640;
+  height: 360;
+}
+/* viewpost.html styles */
+
+/* profile.html styles */
+.profile-userinfo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin: 30px 650px 100px 650px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+  background-color: #e2e2e2
+}
+
+.profile-userinfo2-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* End profile.html styles */
+
+
+
+
+#flash-message {
+  position: fixed;
+  top: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.alert-danger {
+  background-color: red;
+  color: black;
+  
+}
+
+.alert-success {
+  background-color: blue;
+  color: black;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="postv-form-container">
+        <form action="/posts/create"
+        method="POST"
+        enctype="multipart/form-data">
+            <label class="label-common" for="title">Title</label>
+            <input class="postv-input-vtitle" type="text" id="title" name="title" >
+            <p><label  class="label-common" for="description">Description</label></p>
+            <textarea class="postv-textarea-vdescription" id="description" name="description" rows="3" cols="30"></textarea>
+            <!-- <input type="vdescription" id="vdescription" name="vdescription" size="50"><br><br> -->
+            <div class="postv-filename-container">
+                <input class="postv-input-filename" type="file" id="myFile" name="uploadVideo">
+            </div>
+            <input type="checkbox" id="vpolicy" value="">
+            <a  href="">Video Policy</a>
+            <div class="postv-submit-button-container">
+                <input type="submit" value="Submit">
+            </div>
+    </div>
+    </form> 
+</body>
+</html>

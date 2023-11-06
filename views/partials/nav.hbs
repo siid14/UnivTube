@@ -1,0 +1,34 @@
+<nav class="main-nav"> 
+            <ul class="no-dot">
+              <li><a href="/">Index</a></li>
+              {{#if isLoggedIn}}
+              <li><a href="/logout">Logout</a></li>
+              {{else}}
+              <li><a href="/login">Login</a></li>
+              <li><a href="/registration">Registration</a></li>
+               {{/if}}
+              <li><a href="/postvideo">Post</a></li>
+              {{!-- {{log this}} --}}
+              {{!-- <li><a href="/viewpost/1414">ViewPost</a></li> --}}
+              {{#if isLoggedIn}}
+              <li><a href="/profile">Profile</a></li>
+              {{else}}
+              {{/if}}
+              <div class="search-container">
+                <form 
+                  action="/posts/search"
+                  method="GET"
+                  enctype="application/x-www-form-urlencoded"> 
+                  <input  
+                  id="searchInput" 
+                  class="search-input"
+                  name="searchValue"
+                  type="text"
+                  placeholder="Search">
+                 <button type="submit" class="search-button">Search</button>
+                </form>
+              </div>
+            </ul>
+        </nav> 
+
+        

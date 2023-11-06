@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>  
+        <div class="header-common">
+            <h1 class="title-common">UnivTube</h1>
+        </div>
+        <nav class="main-nav"> 
+            <ul class="no-dot">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="postvideo.html">Post</a></li>
+              <li><a href="viewpost.html">View Post</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="registration-form-container">
+        <form action="/action_page.php">
+         <h2>Registration</h2>
+         <label class="label-common" for="username">Username</label>
+         <input class="input-common" type="text" id="username" name="username" placeholder="Username" required>
+         <label class="label-common"  for="email" >Email</label>
+         <input class="input-common" type="email" id="email" name="email" placeholder="Email" required>
+         <label class="label-common"  for="pwd">Password</label>
+         <input class="input-common" type="password" id="pwd" name="pwd" placeholder="Password" required>
+         <label class="label-common"  for="confirmpwd">Confirm Password</label>
+         <input class="input-common" type="password" id="confirmpwd" name="confirmpwd" placeholder="Confirm Password" required>
+            <div class="registration-checkbox-container">
+             <input class="input-common"  type="checkbox" id="age" name="age" value="" required>
+             <label class="label-common"  for="age"> I am 13+ years of age</label>  
+            </div>
+            <div class="registration-rules-container">
+             <input class="input-common" type="checkbox" id="tos" name="tos" value=""required>
+             <label class="label-common" for="tos">Rules:</label>
+             <a  style="font-size: 15px; margin-top: 5px;" href="url">TOS and Privacy Rules</a>
+            </div>
+              <input type="submit" value="Submit">
+            </div>
+        </form> 
+        <footer>
+            <p>Author: Sidney Thomas<p>
+            <p><a href="mailto:username@example.com">Contact Us</a></p>
+            <p><a href="index.html">About Us</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Terms and Conditions</a></p>
+            <p>© 2023 [CSC 317]. All Rights Reserved.<p>
+          </footer>
+          <script defer src="../js/registration.js"></script>
+</body>
+</html>

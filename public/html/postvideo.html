@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Video</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>  
+        <div class="header-common">
+            <h1 class="title-common">UnivTube</h1>
+        </div>
+        <nav class="main-nav"> 
+            <ul class="no-dot">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="postvideo.html">Post</a></li>
+              <li><a href="viewpost.html">View Post</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="postv-form-container">
+        <form action="/action_page.php">
+            <label class="label-common" for="vtitle">Title</label>
+            <input class="postv-input-vtitle" type="text" id="vtitle" name="vtitle" >
+            <p><label  class="label-common" for="vdescription">Description</label></p>
+            <textarea class="postv-textarea-vdescription" id="vdescription" name="vdescription" rows="3" cols="30"></textarea>
+            <!-- <input type="vdescription" id="vdescription" name="vdescription" size="50"><br><br> -->
+            <div class="postv-filename-container">
+                <input class="postv-input-filename" type="file" id="myFile" name="filename">
+            </div>
+            <input type="checkbox" id="vpolicy" name="vpolicy" value="">
+            <a  href="">Video Policy</a>
+            <div class="postv-submit-button-container">
+                <input type="submit" value="Submit">
+            </div>
+    </div>
+    </form> 
+    <footer>
+        <p>Author: Sidney Thomas<p>
+        <p><a href="mailto:username@example.com">Contact Us</a></p>
+        <p><a href="index.html">About Us</a></p>
+        <p><a href="">Privacy Policy</a></p>
+        <p><a href="">Terms and Conditions</a></p>
+        <p>© 2023 [CSC 317]. All Rights Reserved.<p>
+      </footer>  
+</body>
+</html>

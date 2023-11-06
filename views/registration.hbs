@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="registration-form-container">
+        <form action="/users/registration"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"> <!-- /action_page.php removed for testing purpose on server side-->
+         <h2>Registration</h2>
+         <label class="label-common" for="username">Username</label>
+         <input class="input-common" type="text" id="username" name="username" placeholder="Username" > <!-- required removed for testing purpose on server side -->
+         <label class="label-common"  for="email" >Email</label>
+         <input class="input-common" type="email" id="email" name="email" placeholder="Email" > <!-- required removed for testing purpose on server side -->
+         <label class="label-common"  for="pwd">Password</label>
+         <input class="input-common" type="password" id="pwd" name="password" placeholder="Password" > <!-- required removed for testing purpose on server side -->
+         <label class="label-common"  for="confirmpwd">Confirm Password</label>
+         <input class="input-common" type="password" id="confirmpwd" name="confirmPassword" placeholder="Confirm Password" > <!-- required removed for testing purpose on server side -->
+            <div class="registration-checkbox-container">
+             <input class="input-common"  type="checkbox" id="age" name="ageCheck" value="" > <!-- required removed for testing purpose on server side -->
+             <label class="label-common"  for="age"> I am 13+ years of age</label>  
+            </div>
+            <div class="registration-rules-container">
+             <input class="input-common" type="checkbox" id="tos" name="tosCheck" value=""> <!-- required removed for testing purpose on server side -->
+             <label class="label-common" for="tos">Rules:</label>
+             <a  style="font-size: 15px; margin-top: 5px;" href="url">TOS and Privacy Rules</a>
+            </div>
+              <input type="submit" value="Submit">
+            </div>
+        </form> 
+          {{!-- <script defer src="../js/registration.js"></script> --}}
+</body>
+</html>
